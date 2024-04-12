@@ -55,4 +55,4 @@ Final result or modal is visible once user fill all values correctly, and we can
 2.annual-income=4000000,extra-income=0,age>=40 but <60,deductions=100000
 <br/>
 <br/>
-<img src="/test-cases/test-6(2).png" />
+<img src="/test-cases/test-7.png" />
