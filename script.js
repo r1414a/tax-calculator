@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
   //converting string to Number, and converting -ve to +ve.
   const grossAnnualIncome = Math.abs(Number(formData.get("annual-income")));
   const extraIncome = Math.abs(Number(formData.get("extra-income")));
-  const ageGroup = Math.abs(Number(formData.get("age-group")));
+  const ageGroup = formData.get("age-group");
   const deductions = Math.abs(Number(formData.get("deductions")));
 
   if (validationsDone) {
