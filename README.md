@@ -39,3 +39,20 @@ If user fill some fields with correct values and keep some fields empty or fill 
 <br/>
 <br/>
 <img src="/test-cases/test-5.png" />
+
+<h3><b>Test 6</b></h3>
+if user tries to enter negative amount, this case is taken care in the code.
+
+<h3><b>Test 6</b></h3>
+Final result or modal is visible once user fill all values correctly, and we can see final amount in the modal.
+1.annual-income=600000,extra-income=0,age<40,deductions=20000
+<br/>
+<br/>
+<img src="/test-cases/test-6(1).png" />
+
+<br/>
+
+2.annual-income=4000000,extra-income=0,age>=40 but <60,deductions=100000
+<br/>
+<br/>
+<img src="/test-cases/test-6(2).png" />
