@@ -110,19 +110,19 @@ function taxCalculation(grossAnnualIncome, extraIncome, ageGroup, deductions) {
   let overallIncome = grossAnnualIncome + extraIncome - deductions;
   
   if (overallIncome <= BASE_INCOME) {
-    incomeAfterTax = overallIncome;
+    finalAmount = overallIncome;
   } else {
     switch (ageGroup) {
       case "age < 40":
-        incomeAfterTax = 0.3 * (overallIncome - BASE_INCOME);
+        taxedAmount = 0.3 * (overallIncome - BASE_INCOME);
         finalAmout = overallIncome - taxedAmount;
         break;
       case "age >= 40 but < 60":
-        incomeAfterTax = 0.4 * (overallIncome - BASE_INCOME);
+        taxedAmount = 0.4 * (overallIncome - BASE_INCOME);
         finalAmout = overallIncome - taxedAmount;
         break;
       case "age >= 60":
-        incomeAfterTax = 0.1 * (overallIncome - BASE_INCOME);
+        taxedAmount = 0.1 * (overallIncome - BASE_INCOME);
         finalAmout = overallIncome - taxedAmount;
         break;
       //default: 
