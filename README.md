@@ -8,7 +8,7 @@
 <h3><b>Test 1</b></h3>
 on the very first load no error icon is show, they will be show when error occurs.
 <br/>
-![test-1](https://github.com/r1414a/tax-calculator/assets/70930255/f6798d16-a75b-40ba-889e-1769393e0c94)
+![ScreenShot](/test-cases/test-1.png)
 
 <h3><b>Test 2</b></h3>
 for each label alongside there is an icon, and by hovering over it we can see what kind of info. user have to enter shown as tooltip.
