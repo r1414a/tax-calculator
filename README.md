@@ -7,9 +7,6 @@
 
 <h3><b>Test 1</b></h3>
 on the very first load no error icon is show, they will be show when error occurs.
-<br/>
-<br/>
-<br/>
 
 <img src="/test-cases/test-1.png" />
 
