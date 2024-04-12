@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap icon for error icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <div class="container-xl">
+      <div class="row justify-content-center ">
+        <div class="col-xl-6 col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title text-center">Tax Calculator</h3>
+            </div>
+            <div class="card-body p-4 p-sm-5">
+              <form id="taxForm">
+
+                <div class="form-group">
+                  <label for="annual-income">Enter gross annual income </label><i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Gross annual income is your total salary in a year before any deductions."></i>
+                  <div class="input-group">
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="annual-income"
+                    name="annual-income"
+                    placeholder="Enter gross annual income"
+                  /><i class="error-icon bi-info-circle px-2" data-bs-toggle="tooltip" data-bs-placement="top" ></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="extra-income">Enter extra income</label><i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Extra income which doesn't come under your annual income"></i>
+                  <div class="input-group">
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="extra-income"
+                    name="extra-income"
+                    placeholder="Enter extra income from other sources"
+                  /><i class="error-icon bi-info-circle px-2" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age-group">Enter age group</label><i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Age group in which you lie for tax calculation purpose"></i>
+                    <div class="input-group">
+                        <select class="form-select" id="age-group" name="age-group">
+                            <option class="text-secondary">Select age group</option>
+                            <option>age < 40</option>
+                            <option>age >= 40 but < 60</option>
+                            <option>age >= 60</option>
+                          </select><i class="error-icon bi bi-info-circle px-2" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                    </div>
+                  </div>
+
+                <div class="form-group">
+                  <label for="deductions">Enter total applicable deductions</label><i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="It's the amount which is deducted from your income"></i>
+                  <div class="input-group">
+                    <input
+                    type="text"
+                    class="form-control"
+                    id="deductions"
+                    name="deductions"
+                    placeholder="Add total applicable deductions"
+                  /><i  class="error-icon bi bi-info-circle px-2" data-bs-toggle="tooltip" data-bs-placement="top" ></i>
+                  </div>   
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <h2 class="result-text">Your overall income will be</h2>
+              <h1 id="result">₹</h1>
+              <h3 class="result-text">after tax deductions</h3>
+            </div>
+        </div>
+      </div>
+
+      <!-- jquery cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      <!-- bootstrap scripts for modal and tooltip to run  properly -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

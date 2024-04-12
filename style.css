@@ -1,0 +1,70 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   padding-top: 50px;
+}
+
+/* styles related to forms */
+.form-container {
+    min-width: 400px;
+    margin: 0 auto;
+  }
+
+form label{
+    padding: 8px;
+}
+
+form .form-group{
+    margin-bottom: 10px;
+}
+
+.form-group .input-group{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+form button{
+    width: 100%;
+}
+
+/* this class show and hide error icon */
+.error-icon{
+    visibility: hidden;
+}
+
+.input-group i{
+    color: red;
+
+}
+
+
+/* styles related to modal */
+.modal-dialog{
+    width: 400px;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    justify-content: center;
+    margin: 35px 0px;
+}
+.modal-body .result-text{
+    color: grey;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.modal-body h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
