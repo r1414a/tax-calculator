@@ -128,7 +128,7 @@ function taxCalculation(grossAnnualIncome, extraIncome, ageGroup, deductions) {
       //default: 
     }
   }
-  return finalAmout;
+  return finalAmount;
 }
 
 function showResult(incomeAfterDeductions) {
