@@ -8,8 +8,10 @@
 <h3><b>Test 1</b></h3>
 on the very first load no error icon is show, they will be show when error occurs.
 <br/>
+<br/>
+<br/>
+
 <img src="/test-cases/test-1.png" />
-![test-1](https://github.com/r1414a/tax-calculator/assets/70930255/65ea7a9a-9f22-4cf8-9ca8-0eba67cadd14)
 
 
 <h3><b>Test 2</b></h3>
