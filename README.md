@@ -1,7 +1,7 @@
 # tax-calculator
 
 #To run this code on local download all files as zip and execute index.html file.
-
+<a href="https://r1414a.github.io/tax-calculator/" target=_blank>https://r1414a.github.io/tax-calculator/</a>
 
 <h2>Test Cases:-</h2>
 
