@@ -43,7 +43,7 @@ If user fill some fields with correct values and keep some fields empty or fill 
 <h3><b>Test 6</b></h3>
 if user tries to enter negative amount, this case is taken care in the code.
 
-<h3><b>Test 6</b></h3>
+<h3><b>Test 7</b></h3>
 Final result or modal is visible once user fill all values correctly, and we can see final amount in the modal.
 1.annual-income=600000,extra-income=0,age<40,deductions=20000
 <br/>
